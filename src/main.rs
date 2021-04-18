@@ -12,7 +12,7 @@ struct V6Header {
 }
 
 impl V6Header {
-    fn new(header: &str) -> V6Header {
+    fn new(header: &str) -> Self {
         let radix = 16;
 
         let four_octet = u32::from_str_radix(&header[..8], radix).unwrap();
